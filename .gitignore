@@ -1,0 +1,6 @@
+.DS_Store
+.svn/*
+.htaccess
+application/config/database.php
+application/modules/webrtc/views/node_modules
+assets/webrtc/node_modules

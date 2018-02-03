@@ -1,0 +1,51 @@
+{
+  "name": "instacraft-video-chat",
+  "version": "1.0.0",
+  "description": "This is a WebRTC based application that will be used for most video calls between a doctor and a client.",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2 NODE_ENV=production index.js",
+    "dev": "webpack-dev-server --inline --hot --quiet --port=8000",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "keywords": [
+    "webrtc",
+    "vide",
+    "chat",
+    "socket"
+  ],
+  "author": "Jeffery Hussin",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "express": "^4.16.2",
+    "moment": "^2.20.1",
+    "mysql": "^2.15.0",
+    "peer": "^0.2.8",
+    "ua-parser-js": "^0.7.17",
+    "vue": "^2.5.13",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.2.5",
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "browserify": "^15.2.0",
+    "budo": "^10.0.4",
+    "cross-env": "^5.1.3",
+    "css-loader": "^0.28.9",
+    "duplexer": "^0.1.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-webpack-plugin": "^2.30.1",
+    "style-loader": "^0.19.1",
+    "vue-html-loader": "^1.2.4",
+    "vue-loader": "^13.7.0",
+    "vue-style-loader": "^3.1.0",
+    "vue-template-compiler": "^2.5.13",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1"
+  }
+}

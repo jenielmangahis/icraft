@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700');
+*{margin:0px; padding:0px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; letter-spacing: 0.075em;}
+img{border:none;}
+a{text-decoration:none;}
+ul{list-style:none;}
+.clear{clear:both; width:100% !important; height:0 !important; display:block; float:none !important; margin:0 !important; padding:0 !important; }
+.clearfix:after{content:''; clear:both; width:100% !important; height:0 !important; display:block; float:none !important; margin:0 !important; padding:0 !important; }
+input:-webkit-autofill {background:#fff !important;}
+input:focus{ cursor:unset; outline:none;}
+button{border:none; outline: none;font-weight:normal;}
+select {-moz-appearance:none;-webkit-appearance:none;}
+textarea{resize:none; outline:none;}
+a:focus, a:active,
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+select::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {border: 0;outline : 0;}
+.container {max-width: 768px;width: 100%;padding: 0px 20px;margin: 0 auto;}
+body{font-family: 'Karla', sans-serif;}
+.num{float: left;
+    margin-left: -30px;}
+.para{    padding-left: 26px;
+    display: block;}
+.tnc h1 {font-size: 28px;color: #8381ef;margin-bottom:15px;margin-top: 20px;}
+.tnc h3 {font-size: 24px;margin-bottom:15px;color: #8381ef;}
+.tnc h5 {font-size: 18px;margin-bottom:15px;color:#8381ef;}
+.tnc p {margin: 16px 0;color:#535353;}
+.tnc h4 {color: #000;margin-top: 28px;font-family:MuseoSansRounded-500;font-size: 22px;}
+.tnc a, .tnc a {color:#8381ef; font-weight: bold;}
+ul.points li {color: #535353;list-style: disc;margin-left: 20px;padding: 10px 0; list-style:none;}
+ol.points li {color: #535353;list-style: disc;margin-left: 20px;padding: 10px 0;}
+ol li {
+    padding: 0 5px;
+    margin-left: 18px;
+}
+ul.points.point1 li {
+    color: #535353;
+    list-style: disc;
+    margin-left: 20px;
+    padding: 10px 0;
+    list-style: disc;}
+    
+ul.points {margin-bottom:5px;}
+.points p{margin:0px;}
+.tnc table th, td {border: 1px solid white;padding:15px;}
+.tnc table th{background:#154182; color:#fff;}.tnc table td{background:#ededee;}
+.tnc table {border: 1px solid #6f6f6f;}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+   <head>
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+      <link href="../css/style.css" rel="stylesheet" />
+
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+      <meta name="description" content="" />
+      <title>Verify Email</title>
+   </head>
+   <body>
+      <div class="main_wrap find_team set_pass">
+         <!--header starts here-->
+         <header>
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-3 col-md-6">
+                     <div class="logo">
+                        <div class="logo_img">
+                           <!--<img src="../../../Content/images/logo.png" alt="" class="pull-left" />-->
+                        </div>
+                        <span>Instacraft</span>
+                     </div>
+                  </div>
+                  <div class="col-sm-9 col-md-6">
+                  </div>
+               </div>
+            </div>
+         </header>
+         <!--header ends here-->
+         <div class="clear"></div>
+         <!--mid_section starts-->
+         <div class="mid_wrap container_wrap">
+             <div class="row">
+                 <div class="col-sm-12">
+                     <div class="login_box text-center">
+                        <h2 class="form_head">
+                           <%= (data) ? data : '' %>
+                        </h2>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <!--mid section ends-->
+      </div>
+   </body>
+</html>

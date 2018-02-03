@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Karla');
+
+*,
+*:before,
+*:after{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.btn-insta-sub {
+    background: #8381ef;
+    color: #fff;
+    padding: 19px 88px !important;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 auto;
+    display: table;
+    letter-spacing: 2px;
+    box-shadow: 0 0 61px 6px rgba(131, 129, 239, 0.61);
+    border-radius: 42px;
+    margin: 0px !important;
+    
+    
+}
+.btn-insta-fade {
+    background: #838190 !important;
+    color: #fff;
+    padding: 19px 88px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 auto;
+    display: table;
+    letter-spacing: 2px;
+    box-shadow: 0 0 61px 6px rgba(131, 129, 239, 0.61);
+    border-radius: 42px;
+    width:100%;
+    text-align: center;
+    display: inline-block;
+    padding:19px 0;
+}
+#email-error, #password-error{ color:red; }
+.error { color:red; }  
+.alert.alert-Success{display: block;text-align: center;color: green;padding: 10px;}
+.alert.alert-danger{display: block;text-align: center;color: red;padding: 10px;}
+.ui-timepicker-container.ui-timepicker-standard {
+    z-index: 999999999 !important;
+}
+.browse input#fileSign {
+     display: none; 
+}
+input.icon-search.thm-btn {
+    border: none;
+    background: none !important;
+    width: 100% !important;
+    float: left !important;
+    padding: 0px !important;
+    margin: 0px !important;
+    font-size: 17px;
+   font-family: 'Karla', sans-serif !important;
+}
+span.thm-btn.cstm-btn {
+    padding: 0px !important;
+    position: relative;
+   
+}
+.set-pdf-checkboxes {
+    top: 14px;
+    position: relative;
+}
+
+/*Ankit*/

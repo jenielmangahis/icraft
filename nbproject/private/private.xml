@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/var/www/html/instacraft/application/modules/customer/views/mobile/change_password.php</file>
+            <file>file:/var/www/html/instacraft/application/modules/customer/models/Cus_prescription_model.php</file>
+            <file>file:/var/www/html/instacraft/application/modules/customer/views/mobile/view_profile.php</file>
+            <file>file:/var/www/html/instacraft/application/config/config.php</file>
+            <file>file:/var/www/html/instacraft/application/modules/customer/controllers/Caregiver.php</file>
+            <file>file:/var/www/html/instacraft/application/modules/customer/models/Payment_model.php</file>
+            <file>file:/var/www/html/instacraft/application/modules/customer/controllers/Customer.php</file>
+            <file>file:/var/www/html/instacraft/application/modules/customer/views/mobile/social_share.php</file>
+            <file>file:/var/www/html/instacraft/application/modules/customer/views/mobile/time_availability.php</file>
+            <file>file:/var/www/html/instacraft/application/modules/customer/models/Customer_model.php</file>
+            <file>file:/var/www/html/instacraft/application/modules/customer/views/mobile/splash.php</file>
+            <file>file:/var/www/html/instacraft/application/modules/customer/views/mobile/footer.php</file>
+            <file>file:/var/www/html/instacraft/assets/customer/js/app.js</file>
+            <file>file:/var/www/html/instacraft/application/modules/customer/models/Products_model.php</file>
+            <file>file:/var/www/html/instacraft/application/modules/customer/controllers/Payment.php</file>
+            <file>file:/var/www/html/instacraft/process_appointment_fee.php</file>
+            <file>file:/var/www/html/instacraft/product_form.php</file>
+            <file>file:/var/www/html/instacraft/application/helpers/user_helper.php</file>
+            <file>file:/var/www/html/instacraft/process_product_purchase.php</file>
+            <file>file:/var/www/html/instacraft/application/modules/customer/views/mobile/home.php</file>
+            <file>file:/var/www/html/instacraft/assets/customer/css/style.css</file>
+            <file>file:/var/www/html/instacraft/application/modules/customer/views/mobile/my_cart.php</file>
+            <file>file:/var/www/html/instacraft/application/modules/customer/controllers/Prescription.php</file>
+            <file>file:/var/www/html/instacraft/application/modules/customer/views/mobile/our_products.php</file>
+            <file>file:/var/www/html/instacraft/application/modules/customer/views/mobile/header.php</file>
+            <file>file:/var/www/html/instacraft/application/modules/customer/views/mobile/my_profile.php</file>
+            <file>file:/var/www/html/instacraft/application/config/routes.php</file>
+            <file>file:/var/www/html/instacraft/application/modules/customer/controllers/Products.php</file>
+            <file>file:/var/www/html/instacraft/application/modules/customer/views/mobile/edit_profile.php</file>
+            <file>file:/var/www/html/instacraft/application/modules/customer/views/mobile/order_status.php</file>
+            <file>file:/var/www/html/instacraft/application/modules/customer/views/mobile/login_register.php</file>
+            <file>file:/var/www/html/instacraft/stripe_form.php</file>
+            <file>file:/var/www/html/instacraft/application/modules/customer/views/mobile/caregiver_second.php</file>
+            <file>file:/var/www/html/instacraft/application/modules/customer/views/mobile/medical_license.php</file>
+            <file>file:/var/www/html/instacraft/application/modules/customer/models/Caregiver_model.php</file>
+        </group>
+    </open-files>
+</project-private>

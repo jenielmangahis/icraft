@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<link rel="stylesheet" type="text/css" href="./jquery.datetimepicker.css"/>
+<style type="text/css">
+
+.custom-date-style {
+	background-color: red !important;
+}
+
+.input{	
+}
+.input-wide{
+	width: 500px;
+}
+
+</style>
+</head>
+<body>
+
+	<br />
+	<h3>Mask DateTimePicker 1</h3>
+	<input type="text" value="" id="datetimepicker_mask1" placeholder="Start Date"><br><br>
+	<h3>Mask DateTimePicker 2</h3>
+	<input type="text" value="" id="datetimepicker_mask2"/ placeholder="End Date"><br><br>
+	<br /><br /> <hr />
+	<p>Start <input id="date_timepicker_start" type="text" value="">  End <input id="date_timepicker_end" type="text" value=""></p>
+
+</body>
+<script src="./jquery.js"></script>
+<script src="build/jquery.datetimepicker.full.js"></script>
+<script>
+//$.datetimepicker.setLocale('en');
+//jQuery.datetimepicker.setLocale('en');
+/*jQuery('#datetimepicker1').datetimepicker({
+ i18n:{
+  de:{
+   months:[
+    'Januar','Februar','März','April',
+    'Mai','Juni','Juli','August',
+    'September','Oktober','November','Dezember',
+   ],
+   dayOfWeek:[
+    "So.", "Mo", "Di", "Mi", 
+    "Do", "Fr", "Sa.",
+   ]
+  }
+ },
+ timepicker:false,
+ format:'d.m.Y'
+});*/
+
+$('#datetimepicker_mask1').datetimepicker({
+	timepicker:false,
+	 formatDate:'Y/m/d',
+	 minDate:'-1970/01/31',//yesterday is minimum date(for today use 0 or -1970/01/01)
+	 //maxDate:'+1970/02/01'//tomorrow is maximum date calendar
+
+	//minDate:'-1970/01/02', // yesterday is minimum date
+	//maxDate:'+1970/01/02' ,// and tommorow is maximum date calendar
+	//weekends:['01.01.2014','02.01.2014','03.01.2014','04.01.2014','05.01.2014','06.01.2014'],
+	//allowTimes:['12:00','13:00','15:00','17:00','17:05','17:20','19:00','20:00'],
+	//disabledDates:['1986/01/08','1986/01/09','1986/01/10'],
+
+});
+
+$('#datetimepicker_mask2').datetimepicker({
+	dayOfWeekStart : 1,
+	lang:'en',
+	mask:'',
+	//inline:true,
+	formatTime:'H:i',
+	formatDate:'d.m.Y',
+	startDate:	'1986/01/05',
+	//minDate:'-1970/01/02', // yesterday is minimum date
+	//maxDate:'+1970/01/02' ,// and tommorow is maximum date calendar
+	//weekends:['01.01.2014','02.01.2014','03.01.2014','04.01.2014','05.01.2014','06.01.2014'],
+	//allowTimes:['12:00','13:00','15:00','17:00','17:05','17:20','19:00','20:00'],
+	//disabledDates:['1986/01/08','1986/01/09','1986/01/10'],
+	timepickerScrollbar:false
+});
+
+
+
+
+
+
+jQuery('#date_timepicker_start').datetimepicker({
+  format:'Y/m/d',
+  onShow:function( ct ){
+   this.setOptions({
+    maxDate:jQuery('#date_timepicker_end').val()?jQuery('#date_timepicker_end').val():false
+   })
+  },
+  timepicker:false
+ });
+ jQuery('#date_timepicker_end').datetimepicker({
+  format:'Y/m/d',
+  onShow:function( ct ){
+   this.setOptions({
+    minDate:jQuery('#date_timepicker_start').val()?jQuery('#date_timepicker_start').val():false
+   })
+  },
+  timepicker:false
+ });
+
+</script>
+</html>

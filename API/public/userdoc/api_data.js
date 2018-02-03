@@ -1,0 +1,1109 @@
+define({ "api": [
+  {
+    "type": "post",
+    "url": "/changePassword",
+    "title": "changePassword",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Content-Type",
+            "description": "<p>application/x-www-form-urlencoded.</p>"
+          }
+        ]
+      }
+    },
+    "description": "<p>http://203.123.36.134:30010/apiuser/v1/changePassword/</p>",
+    "group": "Customer",
+    "name": "changePassword________________________________________________________________________________________________________________________________________________________________",
+    "parameter": {
+      "fields": {
+        "Expected parameters": [
+          {
+            "group": "Expected parameters",
+            "type": "String",
+            "optional": false,
+            "field": "current_password",
+            "description": "<p>password string</p>"
+          },
+          {
+            "group": "Expected parameters",
+            "type": "String",
+            "optional": false,
+            "field": "new_password",
+            "description": "<p>new password string</p>"
+          },
+          {
+            "group": "Expected parameters",
+            "type": "String",
+            "optional": false,
+            "field": "user_id",
+            "description": "<p>user_id string</p> <hr>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "boolean",
+            "allowedValues": [
+              "false",
+              "true"
+            ],
+            "optional": false,
+            "field": "Success",
+            "description": "<p>response status ( false for error, true for success )</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "Status",
+            "description": "<p>status code</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "Message",
+            "description": "<p>response message string</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "AppVersion",
+            "description": "<p>APP version</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "Result",
+            "description": "<p>result</p> <hr>"
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "routes/v1/user/index.js",
+    "groupTitle": "Customer"
+  },
+  {
+    "type": "post",
+    "url": "/guestuserRegister",
+    "title": "guestuserRegister",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Content-Type",
+            "description": "<p>application/json.</p>"
+          }
+        ]
+      }
+    },
+    "description": "<p>http://203.123.36.134:30010/apiuser/v1/guestuserRegister/</p>",
+    "group": "Customer",
+    "name": "guestuserRegister________________________________________________________________________________________________________________________________________________________________",
+    "parameter": {
+      "fields": {
+        "Expected parameters": [
+          {
+            "group": "Expected parameters",
+            "type": "String",
+            "optional": false,
+            "field": "device_token",
+            "description": "<p>device token string</p>"
+          },
+          {
+            "group": "Expected parameters",
+            "type": "String",
+            "optional": false,
+            "field": "device_type",
+            "description": "<p>device type string</p> <hr>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "boolean",
+            "allowedValues": [
+              "false",
+              "true"
+            ],
+            "optional": false,
+            "field": "Success",
+            "description": "<p>response status ( false for error, true for success )</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "Status",
+            "description": "<p>status code</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "Message",
+            "description": "<p>response message string</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "AppVersion",
+            "description": "<p>APP version</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "Result",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "routes/v1/user/index.js",
+    "groupTitle": "Customer"
+  },
+  {
+    "type": "post",
+    "url": "/loginWithSocial",
+    "title": "loginWithSocial",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Content-Type",
+            "description": "<p>application/json.</p>"
+          }
+        ]
+      }
+    },
+    "description": "<p>http://203.123.36.134:30010/apiuser/v1/loginWithSocial/</p>",
+    "group": "Customer",
+    "name": "loginWithSocial________________________________________________________________________________________________________________________________________________________________",
+    "parameter": {
+      "fields": {
+        "Expected parameters": [
+          {
+            "group": "Expected parameters",
+            "type": "String",
+            "optional": false,
+            "field": "social_id",
+            "description": "<p>Social Id string</p>"
+          },
+          {
+            "group": "Expected parameters",
+            "type": "String",
+            "optional": false,
+            "field": "social_type",
+            "description": "<p>Social Type(1=&gt;facebook,2=&gt;google) string</p>"
+          },
+          {
+            "group": "Expected parameters",
+            "type": "String",
+            "optional": false,
+            "field": "device_token",
+            "description": "<p>device_token string</p>"
+          },
+          {
+            "group": "Expected parameters",
+            "type": "String",
+            "optional": false,
+            "field": "device_type",
+            "description": "<p>device_type string</p>"
+          },
+          {
+            "group": "Expected parameters",
+            "type": "String",
+            "optional": false,
+            "field": "lang",
+            "description": "<p>lang string</p> <hr>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "boolean",
+            "allowedValues": [
+              "false",
+              "true"
+            ],
+            "optional": false,
+            "field": "Success",
+            "description": "<p>response status ( false for error, true for success )</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "Status",
+            "description": "<p>status code</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "Message",
+            "description": "<p>response message string</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "AppVersion",
+            "description": "<p>APP version</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "Result",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "routes/v1/user/index.js",
+    "groupTitle": "Customer"
+  },
+  {
+    "type": "post",
+    "url": "/login",
+    "title": "login",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Content-Type",
+            "description": "<p>application/json.</p>"
+          }
+        ]
+      }
+    },
+    "description": "<p>http://203.123.36.134:30010/apiuser/v1/login/</p>",
+    "group": "Customer",
+    "name": "login________________________________________________________________________________________________________________________________________________________________",
+    "parameter": {
+      "fields": {
+        "Expected parameters": [
+          {
+            "group": "Expected parameters",
+            "type": "String",
+            "optional": false,
+            "field": "username",
+            "description": "<p>email/phone_number string</p>"
+          },
+          {
+            "group": "Expected parameters",
+            "type": "String",
+            "optional": false,
+            "field": "password",
+            "description": "<p>password string</p>"
+          },
+          {
+            "group": "Expected parameters",
+            "type": "String",
+            "optional": false,
+            "field": "device_token",
+            "description": "<p>device_token string</p>"
+          },
+          {
+            "group": "Expected parameters",
+            "type": "String",
+            "optional": false,
+            "field": "device_type",
+            "description": "<p>device_type string</p>"
+          },
+          {
+            "group": "Expected parameters",
+            "type": "String",
+            "optional": false,
+            "field": "login_time",
+            "description": "<p>login_time UTC Seconds</p>"
+          },
+          {
+            "group": "Expected parameters",
+            "type": "String",
+            "optional": false,
+            "field": "lang",
+            "description": "<p>lang string</p> <hr>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "boolean",
+            "allowedValues": [
+              "false",
+              "true"
+            ],
+            "optional": false,
+            "field": "Success",
+            "description": "<p>response status ( false for error, true for success )</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "Status",
+            "description": "<p>status code</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "Message",
+            "description": "<p>response message string</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "AppVersion",
+            "description": "<p>APP version</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "Result",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "routes/v1/user/index.js",
+    "groupTitle": "Customer"
+  },
+  {
+    "type": "post",
+    "url": "/register",
+    "title": "register",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Content-Type",
+            "description": "<p>application/x-www-form-urlencoded.</p>"
+          }
+        ]
+      }
+    },
+    "description": "<p>http://203.123.36.134:10020/api/v1/register/</p>",
+    "group": "Customer",
+    "name": "register________________________________________________________________________________________________________________________________________________________________",
+    "parameter": {
+      "fields": {
+        "Expected parameters": [
+          {
+            "group": "Expected parameters",
+            "type": "String",
+            "optional": false,
+            "field": "email",
+            "description": "<p>Email string</p>"
+          },
+          {
+            "group": "Expected parameters",
+            "type": "String",
+            "optional": false,
+            "field": "registration_type",
+            "description": "<p>Registration Type(1=&gt;email,2=&gt;facebook) string</p>"
+          },
+          {
+            "group": "Expected parameters",
+            "type": "String",
+            "optional": false,
+            "field": "is_termcondition_accepted",
+            "description": "<p>is_termcondition_accepted (1=&gt;accepted,0=&gt;not accepted) string</p>"
+          },
+          {
+            "group": "Expected parameters",
+            "type": "String",
+            "optional": false,
+            "field": "social_id",
+            "description": "<p>social_id string</p>"
+          },
+          {
+            "group": "Expected parameters",
+            "type": "String",
+            "optional": false,
+            "field": "refferal_code",
+            "description": "<p>refferal_code string</p>"
+          },
+          {
+            "group": "Expected parameters",
+            "type": "String",
+            "optional": false,
+            "field": "password",
+            "description": "<p>password string</p>"
+          },
+          {
+            "group": "Expected parameters",
+            "type": "String",
+            "optional": false,
+            "field": "device_token",
+            "description": "<p>device token string</p>"
+          },
+          {
+            "group": "Expected parameters",
+            "type": "String",
+            "optional": false,
+            "field": "device_type",
+            "description": "<p>device type 0=android,1=IOs it would be also a string</p> <hr>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "boolean",
+            "allowedValues": [
+              "false",
+              "true"
+            ],
+            "optional": false,
+            "field": "Success",
+            "description": "<p>response status ( false for error, true for success )</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "Status",
+            "description": "<p>status code</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "Message",
+            "description": "<p>response message string</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "AppVersion",
+            "description": "<p>APP version</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "Result",
+            "description": "<p>result</p> <hr> <pre><code> {  &quot;success&quot;: true,  &quot;status&quot;: 200,  &quot;message&quot;: &quot;Sign Up Successfully&quot;,  &quot;api_version&quot;: &quot;1.0.0&quot;,  &quot;data&quot;: {  &quot;user_id&quot;: 9,  &quot;email&quot;: &quot;ramnsdsisvsdfgsdfasfgh@techaheadcorp.com&quot;,  &quot;expiresIn&quot;: 86400  }  }</code></pre>"
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "routes/v1/user/index.js",
+    "groupTitle": "Customer"
+  },
+  {
+    "type": "post",
+    "url": "/updateProfile",
+    "title": "updateProfile",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Content-Type",
+            "description": "<p>application/x-www-form-urlencoded.</p>"
+          }
+        ]
+      }
+    },
+    "description": "<p>updateProfile</p>",
+    "group": "Customer",
+    "name": "updateProfile________________________________________________________________________________________________________________________________________________________________",
+    "parameter": {
+      "fields": {
+        "Expected parameters": [
+          {
+            "group": "Expected parameters",
+            "type": "String",
+            "optional": false,
+            "field": "user_id",
+            "description": "<p>User Id string</p>"
+          },
+          {
+            "group": "Expected parameters",
+            "type": "String",
+            "optional": false,
+            "field": "first_name",
+            "description": "<p>First Name string</p>"
+          },
+          {
+            "group": "Expected parameters",
+            "type": "String",
+            "optional": false,
+            "field": "last_name",
+            "description": "<p>Last Name string</p>"
+          },
+          {
+            "group": "Expected parameters",
+            "type": "String",
+            "optional": false,
+            "field": "is_medical_prescription",
+            "description": "<p>is_medical_prescription(0=&gt;unchecked,1=&gt;checked) string</p>"
+          },
+          {
+            "group": "Expected parameters",
+            "type": "String",
+            "optional": false,
+            "field": "state",
+            "description": "<p>State string</p>"
+          },
+          {
+            "group": "Expected parameters",
+            "type": "String",
+            "optional": false,
+            "field": "city",
+            "description": "<p>City string</p>"
+          },
+          {
+            "group": "Expected parameters",
+            "type": "String",
+            "optional": false,
+            "field": "address",
+            "description": "<p>Address string</p>"
+          },
+          {
+            "group": "Expected parameters",
+            "type": "String",
+            "optional": false,
+            "field": "dob",
+            "description": "<p>date_of_birth(1987-09-24) string</p>"
+          },
+          {
+            "group": "Expected parameters",
+            "type": "Number",
+            "optional": false,
+            "field": "gender",
+            "description": "<p>0=nil 1=male 2=female 3=other</p> <hr>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "allowedValues": [
+              "0",
+              "1"
+            ],
+            "optional": false,
+            "field": "Success",
+            "description": "<p>response status ( false for error, true for success )</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "Status",
+            "description": "<p>status code</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "Message",
+            "description": "<p>response message string</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "AppVersion",
+            "description": "<p>APP version</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "Result",
+            "description": "<p>result</p> <hr>"
+          },
+          {
+            "group": "Success 200",
+            "type": "json",
+            "optional": false,
+            "field": "Success-Response",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "routes/v1/user/index.js",
+    "groupTitle": "Customer"
+  },
+  {
+    "type": "post",
+    "url": "/checkProductAvailability",
+    "title": "checkProductAvailability",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Content-Type",
+            "description": "<p>application/json.</p>"
+          }
+        ]
+      }
+    },
+    "description": "<p>http://203.123.36.134:30010/apiuser/v1/checkProductAvailability/</p>",
+    "group": "Product",
+    "name": "checkProductAvailability________________________________________________________________________________________________________________________________________________________________",
+    "parameter": {
+      "fields": {
+        "Expected parameters": [
+          {
+            "group": "Expected parameters",
+            "type": "String",
+            "optional": false,
+            "field": "user_id",
+            "description": "<p>user_id string</p>"
+          },
+          {
+            "group": "Expected parameters",
+            "type": "String",
+            "optional": false,
+            "field": "zip_code",
+            "description": "<p>zip_code string</p> <hr>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "boolean",
+            "allowedValues": [
+              "false",
+              "true"
+            ],
+            "optional": false,
+            "field": "Success",
+            "description": "<p>response status ( false for error, true for success )</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "Status",
+            "description": "<p>status code</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "Message",
+            "description": "<p>response message string</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "AppVersion",
+            "description": "<p>APP version</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "Result",
+            "description": "<p>result</p> <hr>"
+          },
+          {
+            "group": "Success 200",
+            "type": "json",
+            "optional": false,
+            "field": "Success-Response",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "routes/v1/user/index.js",
+    "groupTitle": "Product"
+  },
+  {
+    "type": "post",
+    "url": "/shareOnSocialMedia",
+    "title": "shareOnSocialMedia",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Content-Type",
+            "description": "<p>application/x-www-form-urlencoded.</p>"
+          }
+        ]
+      }
+    },
+    "description": "<p>http://203.123.36.134:30010/apiuser/v1/shareOnSocialMedia/</p>",
+    "group": "Share",
+    "name": "shareOnSocialMedia________________________________________________________________________________________________________________________________________________________________",
+    "parameter": {
+      "fields": {
+        "Expected parameters": [
+          {
+            "group": "Expected parameters",
+            "type": "String",
+            "optional": false,
+            "field": "social_type",
+            "description": "<p>social_type(0=&gt;Share on Facebook,1=&gt;Share on Twitter,2=&gt;Share on Instagram) string</p>"
+          },
+          {
+            "group": "Expected parameters",
+            "type": "String",
+            "optional": false,
+            "field": "user_id",
+            "description": "<p>user_id string</p> <hr>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "boolean",
+            "allowedValues": [
+              "false",
+              "true"
+            ],
+            "optional": false,
+            "field": "Success",
+            "description": "<p>response status ( false for error, true for success )</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "Status",
+            "description": "<p>status code</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "Message",
+            "description": "<p>response message string</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "AppVersion",
+            "description": "<p>APP version</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "Result",
+            "description": "<p>result</p> <hr>"
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "routes/v1/user/index.js",
+    "groupTitle": "Share"
+  },
+  {
+    "type": "post",
+    "url": "/shareWithContact",
+    "title": "shareWithContact",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Content-Type",
+            "description": "<p>application/json.</p>"
+          }
+        ]
+      }
+    },
+    "description": "<p>http://203.123.36.134:30010/apiuser/v1/shareWithContact/</p>",
+    "group": "Share",
+    "name": "shareWithContact________________________________________________________________________________________________________________________________________________________________",
+    "parameter": {
+      "fields": {
+        "Expected parameters": [
+          {
+            "group": "Expected parameters",
+            "type": "String",
+            "optional": false,
+            "field": "user_id",
+            "description": "<p>user_id string</p>"
+          },
+          {
+            "group": "Expected parameters",
+            "type": "Array",
+            "optional": false,
+            "field": "contact_list",
+            "description": "<p>Contact List Array</p> <hr>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "boolean",
+            "allowedValues": [
+              "false",
+              "true"
+            ],
+            "optional": false,
+            "field": "Success",
+            "description": "<p>response status ( false for error, true for success )</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "Status",
+            "description": "<p>status code</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "Message",
+            "description": "<p>response message string</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "AppVersion",
+            "description": "<p>APP version</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "Result",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "routes/v1/user/index.js",
+    "groupTitle": "Share"
+  },
+  {
+    "type": "get",
+    "url": "/getInfoPages",
+    "title": "getInfoPages",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Content-Type",
+            "description": "<p>application/x-www-form-urlencoded.</p>"
+          }
+        ]
+      }
+    },
+    "description": "<p>http://203.123.36.134:30010/api/v1/getInfoPages</p>",
+    "group": "Static_Page",
+    "name": "getInfoPages________________________________________________________________________________________________________________________________________________________________",
+    "parameter": {
+      "fields": {
+        "Expected parameters": [
+          {
+            "group": "Expected parameters",
+            "type": "String",
+            "optional": false,
+            "field": "slug",
+            "description": "<p>page slug string (Terms &amp; Condition=&gt;'terms-and-condition' )</p> <hr>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "allowedValues": [
+              "0",
+              "1"
+            ],
+            "optional": false,
+            "field": "Success",
+            "description": "<p>response status ( 0 for error, 1 for success )</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "Status",
+            "description": "<p>status code</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "Message",
+            "description": "<p>response message string</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "AppVersion",
+            "description": "<p>APP version</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "Result",
+            "description": "<p>result</p> <hr>"
+          },
+          {
+            "group": "Success 200",
+            "type": "json",
+            "optional": false,
+            "field": "Success-Response",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "routes/v1/user/index.js",
+    "groupTitle": "Static_Page"
+  },
+  {
+    "type": "get",
+    "url": "/check",
+    "title": "check",
+    "description": "<p>http://203.123.36.134:30010/apiuser/v1/check</p>",
+    "group": "Test",
+    "name": "check________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "boolean",
+            "allowedValues": [
+              "false",
+              "true"
+            ],
+            "optional": false,
+            "field": "Success",
+            "description": "<p>response status ( false for error, true for success )</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "Status",
+            "description": "<p>status code</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "Message",
+            "description": "<p>response message string</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "AppVersion",
+            "description": "<p>APP version</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "Result",
+            "description": "<p>result</p> <hr>"
+          }
+        ]
+      }
+    },
+    "version": "1.0.0",
+    "filename": "routes/v1/user/index.js",
+    "groupTitle": "Test"
+  }
+] });

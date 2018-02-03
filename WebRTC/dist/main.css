@@ -1,0 +1,50 @@
+.vh-full{
+	height: 100vh;
+}
+/* Video chat */
+.video-container{
+	background: transparent;
+	position: relative;
+}
+.video-container #callee{
+	top: 1em;
+	right: 1em;
+	height: 123px;
+}
+/* Text chat */
+.chat-container{
+	background: #fff;
+	box-shadow: 6px -14px 20px 0px #00000070;
+	outline: none;
+	position: relative;
+}
+.chat-container .bct > div{
+	height: 100%;
+	padding-top: 15px;
+}
+.chat-container .bct .msg{
+    padding: 5px 8px 6px;
+    border-radius: 12px;
+    max-width: 240px;
+    font-size: 15px;
+}
+.chat-container .ict{
+	position: absolute;
+	bottom: 0;
+}
+.chat-container .ict > .chat-input input{
+	font-size: 1em;
+}
+.chat-container .ict > .chat-input input, .chat-container .ict > .chat-input input:focus{
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+.chat-container .ict .btn-send{
+	font-size: 1.83em;
+	padding: 0;
+	color: #d6dade;
+}
+.chat-container .ict .btn-send:hover{
+	color: #e2e6ea;
+}

@@ -1,0 +1,21 @@
+.checkbox input{display: none;}
+.checckbox_list > label{float: left; margin-right: 10px; margin-top:0px !important;} 
+.checckbox_list > label:last-child{margin-right: 0;}
+.checkbox .box_line{float: left; margin-right: 10px; position: relative; width: 20px; height: 20px; border:1px solid #bdb3b3;}
+.top_15{margin-top: 15px; }
+.pad_8{padding: 10px;}
+.checkbox input:checked ~ .box_line:after{content: '';
+    display: block;
+    width: 6px;
+    height: 10px;
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 3px;
+    left: 5px;}
+.checkbox .checkbox_txt {float: left; line-height: 20px;} 
+
